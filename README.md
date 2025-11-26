@@ -86,13 +86,13 @@ def bill(amountPound, commission, totalCost, currencySign, convertedValue, emplo
 
 #Main programme
 def main():
-  #Asks the user for the number of pounds the passing it through the function, after its passes through it sets it as the base value
+ #Asks the user for the number of pounds the passing it through the function, after its passes through it sets it as the base value
     amountPound = int(input("Enter the amount of pounds the customer wishes to convert (Maxiumum of £2500): "))
     amountPound = validatePound(amountPound)
     baseAmount = amountPound
     print("------------------------------------------------------------------------------------------------------------------------------------------------------")
     
-  #Asks the user to choose a currency then passing it through the function to validate it
+ #Asks the user to choose a currency then passing it through the function to validate it
     chosenCurrency = str(input("Enter which currency the customer wishes to convert to, (Dollar, Euro, Real, Yen or Lira): "))
     chosenCurrency = validateChosenCurrency(chosenCurrency)
     
@@ -109,5 +109,5 @@ def main():
     employeeYorN = str(input("Is the customer an employee: "))
     bill(amountPound, commission, totalCost, currencySign, convertedValue, employeeYorN, baseAmount)
 
-#Initiates the programme
+#Initiates the program
 main()
